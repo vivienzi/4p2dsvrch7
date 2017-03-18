@@ -1,0 +1,113 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    fill: #242424;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+    cursor: default;
+    height: 1000px;
+    position: relative;
+    background: #ececec;
+}
+.navbar-header{
+  padding-left:100px;
+background-color: #9a0606;
+}
+.navbar-default .navbar-brand {
+    color: #ffffff;
+    height: 70px;
+    font-size: 50px;
+    line-height: 50px;
+    background-color: #9a0606;
+}
+#bs-example-navbar-collapse-1{
+      background-color: #9a0606;
+}
+
+.dropdown{
+  position: relative;
+  text-align: left;
+  padding: 20px;
+}
+
+.datepicker input{
+  float: left;
+}
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.axis path, .axis line{
+		fill: none;
+		stroke: black;
+		shape-rendering: crispEdges;
+	}
+
+	.axis text {
+		font-family: sans-serif;
+		font-size: 11px;
+	}
+
+	.MyRect {
+		fill: steelblue;
+	}
+
+	.MyText {
+		fill: white;
+		text-anchor: middle;
+	}
+.treebutton{
+  float: right
+}
+
+.link {
+    fill: none;
+    stroke: #555;
+    stroke-opacity: 0.4;
+    stroke-width: 1.5px;
+}
+/*navbar & login*/
+.form-control{
+  margin:10px;
+}
+.container-login{
+  padding: 80px 10px;
+  margin: 20px;
+  width: 50%;
+  float:left;
+  left: 20%;
+  background: white;
+  position: absolute;
+}
+.form-signin{
+  padding:0 150px;
+}
+.form-signin .btn{
+  background-color: #9a0606;
+    border-color: #9a0606;
+}
+
+.title{
+  color: #9a0606;
+  margin: 0 39px;
+}
+
+/*map*/
+.counties {
+  fill: none;
+}
+.states {
+  fill: none;
+  stroke-linejoin: round;
+}
+
+.form-inline{
+  padding-bottom: 50px;
+}
+
+.calendarform{
+  margin:0;
+}

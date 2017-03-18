@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 2137097010<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-hierarchy.v1.min.js"></script>
+    <script src="https://d3js.org/d3-color.v1.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Enterprise Performance Analysis</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-default ">
+      <div >
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand .brand" href="#">Verizon Wireless</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container-fluid">
+      <h2 class="title">Enterprise Performance Analysis</h2>
+      <div class="container-map">
+        <form class="form-inline">
+          <div class="btn-group region">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Region
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">AAA</a><br />
+              <a class="dropdown-item" href="#">BBB</a><br />
+              <a class="dropdown-item" href="#">CCC</a><br />
+            </div>
+          </div>
+          <div class="btn-group subregion">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              SubRegion
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">XXX</a><br />
+              <a class="dropdown-item" href="#">YYY</a><br />
+              <a class="dropdown-item" href="#">ZZZ</a><br />
+            </div>
+          </div>
+<!-- calendar -->
+<div class="form-group">
+      <div class='input-group date' id='datetimepicker1'>
+          <input type='text' class="form-control calendarform" />
+          <span class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+          </span>
+      </div>
+  </div>
+
+          <div class="btn-group VoLTE-KPI">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              VoLTE-KPI
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">VoLTE-KPI1</a><br/>
+              <a class="dropdown-item" href="#">VoLTE-KPI2</a><br />
+              <a class="dropdown-item" href="#">VoLTE-KPI3</a><br />
+              <a class="dropdown-item" href="#">VoLTE-KPI4</a><br />
+            </div>
+          </div>
+          <button type="submit" class="btn btn-default">Go</button>
+        </form>
+
+
+        <div class="geo-map"></div>
+      </div>
+      <div class="volte">
+        <div class="dropdown">
+          <button class="btn btn-primary btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown">Enterprise VolTE Performance
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a>ACDSXFE</a></li>
+            <li><a>ACDSXFE</a></li>
+            <li><a>ACDSXFE</a></li>
+            <li><a>ACDSXFE</a></li>
+            <li><a>ACDSXFE</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </body>
+  <script src="map.js"></script>
+  <script src="volte_table.js"></script>
+</html>
